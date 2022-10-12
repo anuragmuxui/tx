@@ -109,21 +109,23 @@ body {
     transform: translateY(-50%);
 }
 
-#menu-top {
+.navbar {
+    overflow-y: auto;
+    height: 65%;
     margin-top: 1.5rem;
 }
 
-#menu-top .nav li {
+.nav li {
     padding: .75rem 0;
 }
 
-#menu-top .nav li a:last-of-type {
+.nav li a:last-of-type {
     margin-left: 1rem;
     color: #000000;
     font-size: 1.15rem;
 }
 
-#menu-top .nav img {
+.nav img {
     width: 1rem;
 }
 
