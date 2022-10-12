@@ -5,7 +5,7 @@
 
 :root {
     --primary: #0F80D7;
-    --searchbar--sub: #0F80D7;
+    --searchbar--sub: #D9D9D9;
 
     --container-padding: .5rem;
 }
@@ -77,6 +77,26 @@ body {
 
 .appbar__middle div:last-of-type img {
     width: .75rem;
+}
+
+.appbar__end {
+    position: relative;
+}
+
+.appbar__end>input[type="search"] {
+    width: calc(100% - 1rem);
+    background-color: var(--searchbar--sub);
+    border: 0;
+    border-radius: 3px;
+    padding: .5rem;
+}
+
+.appbar__end :last-child {
+    width: .8rem;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
 }
 
 #right {
