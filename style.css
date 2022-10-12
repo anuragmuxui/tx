@@ -133,6 +133,7 @@ body {
 #right {
     height: 100%;
     padding: 2rem;
+    overflow-y: auto;
 }
 
 .content__top img{
@@ -141,6 +142,80 @@ body {
 
 .content__top--right {
     margin-left: 1rem;
+}
+
+.content__middle {
+    padding-block: 1rem;
+    height: 60%;
+    overflow-y: auto;
+    margin-top: 1.5rem;
+}
+
+@keyframes slide {
+    50% {
+        background-size:70% 3px;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.faq {
+    position: relative;
+    padding: .8rem 1rem;
+    margin: .5rem;
+    border-radius: 8px;
+    border: 1px solid var(--searchbar--sub);
+}
+
+.faq img {
+    width: 2rem;
+}
+
+.faq-title {
+    margin-left: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.faq-content {
+    /* display: none; */
+    font-family: 'nunito', 'sans-serif';
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    border-left: 5px solid rgb(91, 47, 202);
+    margin-top:0px ;
+    padding:0 ;
+    opacity: 0;
+    height: 0px;
+    font-size: .9rem;
+    color: hsl(208, 41%, 20%);
+    transition: .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.faq.active .faq-content {
+    /* display: block; */
+    margin-top: 10px;
+    opacity: 1;
+    padding: 1rem;
+    height: auto;
+}
+
+.faq .toggler {
+    position: absolute;
+    top: 1.1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.faq .toggler.active {
+    background: -moz-linear-gradient(#9c47fc, #356ad2);
+    background-clip: text;
+  -moz-background-clip: text;
+  -moz-fill-color: transparent;
+    transform: rotate(90deg);
 }
 
 .content__bottom {
@@ -163,7 +238,7 @@ body {
 
 .content__bottom span:last-child{
     display: inline-block;
-    margin-block: 1rem;
+    margin-top: .5rem;
 }
 .content__bottom span:last-child a {
     color: rgb(99, 144, 185);
