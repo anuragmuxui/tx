@@ -129,9 +129,7 @@ body {
     width: 1rem;
 }
 
-
-
 #right {
     height: 100%;
-    background-color: blue;
+    background: linear-gradient(270deg, #DD6091 -8.92%, #A848E3 47.24%, #60CDFF 100%);
 }
