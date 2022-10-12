@@ -265,3 +265,64 @@ body {
 .content__bottom span:last-child a {
     color: rgb(99, 144, 185);
 }
+
+@media screen and (max-width: 1200px) {
+    .container-fluid {
+        grid-template-columns: 30% 70%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container-fluid {
+        grid-template-columns: 40% 60%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container-fluid {
+        grid-template-columns: 100%;
+    }
+    #left {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+    }
+    #right {
+        padding: 0rem;
+    }
+    .content__top img {
+        width: 7rem;
+    }
+    .content__top {
+        flex-direction: column;
+        text-align: center;
+        background: linear-gradient(270deg, #DD6091 -8.92%, #A848E3 47.24%, #60CDFF 100%);
+        padding: 2rem 1rem 2rem;
+        color: #ffffff;
+    }
+    .content__bottom{
+        padding-inline: .5rem;
+    }
+}
+@media screen and (max-width: 340px) {
+    .content__top img {
+        width: 5rem;
+    }
+    .content__top h1 {
+        font-size: 1rem;
+    }
+    .content__top p {
+        font-size: .7rem;
+    }
+
+    .content__middle {
+        padding-block: 0;
+    }
+
+    .faq-title {
+        font-size: .8rem;
+    }
+}
