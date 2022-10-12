@@ -49,6 +49,7 @@ body {
 }
 
 #left {
+    border-right: 1px solid rgba(73, 73, 73, 0.23);
     height: 100%;
     /*background-color: red;*/
 }
@@ -131,5 +132,39 @@ body {
 
 #right {
     height: 100%;
+    padding: 2rem;
+}
+
+.content__top img{
+    width: 3.5rem;
+}
+
+.content__top--right {
+    margin-left: 1rem;
+}
+
+.content__bottom {
+    padding-block: 1rem;
+}
+
+.content__bottom button{
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    border-radius: 3px;
     background: linear-gradient(270deg, #DD6091 -8.92%, #A848E3 47.24%, #60CDFF 100%);
+}
+
+.content__bottom button a {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.content__bottom span:last-child{
+    display: inline-block;
+    margin-block: 1rem;
+}
+.content__bottom span:last-child a {
+    color: rgb(99, 144, 185);
 }
