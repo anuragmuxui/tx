@@ -1,6 +1,22 @@
+/* resets */
 * {
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Utility styles */
+.flex {
+    display: flex;
+    align-items: center;
 }
 
 :root {
@@ -8,12 +24,6 @@
     --searchbar--sub: #D9D9D9;
 
     --container-padding: .5rem;
-}
-
-/* Utility styles */
-.flex {
-    display: flex;
-    align-items: center;
 }
 
 html {
@@ -98,6 +108,26 @@ body {
     right: 10%;
     transform: translateY(-50%);
 }
+
+#menu-top {
+    margin-top: 1.5rem;
+}
+
+#menu-top .nav li {
+    padding: .75rem 0;
+}
+
+#menu-top .nav li a:last-of-type {
+    margin-left: 1rem;
+    color: #000000;
+    font-size: 1.15rem;
+}
+
+#menu-top .nav img {
+    width: 1rem;
+}
+
+
 
 #right {
     height: 100%;
