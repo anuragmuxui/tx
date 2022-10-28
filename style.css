@@ -266,6 +266,10 @@ body {
     color: rgb(99, 144, 185);
 }
 
+#left {
+    filter: blur(4px);
+}
+
 @media screen and (max-width: 1200px) {
     .container-fluid {
         grid-template-columns: 30% 70%;
